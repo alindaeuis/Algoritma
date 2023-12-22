@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>penjualan tiket</title>
+</head>
+<body>
+    
+
+    <script>
+        let jenisTiket = prompt("jenis tiket:");
+        let jumlahTiket = 50;
+        let tiketTerjual = prompt("tiket terjual:");
+        let hargaTiket = prompt("harga tiket:");
+        let penjualan = hargaTiket * tiketTerjual;
+
+        
+
+        if(jenisTiket == "VIP") {
+            if(hargaTiket == 50000) {
+                // console.log("harga tiket adalah " + hargaTiket);
+            if(tiketTerjual >= 35) {
+                let keuntungan = 25/100 * penjualan;
+                // console.log("uang yang didapatkan dari penjualan tiket adalah " + penjualan);
+               
+            }else if(tiketTerjual >=20 && tiketTerjual <= 35) {
+                let keuntungan = 15/100 * penjualan;
+                // console.log("anda mendapat keuntungan 15%");
+    
+            }else if(tiketTerjual < 20) {
+                let keuntungan = 7/100 * penjualan;
+               
+
+            }
+            }
+        }else if(jenisTiket == "eksekutif") {
+            if(hargaTiket == 35000);
+            if(tiketTerjual >= 40) {
+                let keuntungan = 20/100 * penjualan;
+                console.log("keuntungan penjualan tiket eksekutif adalah " + keuntungan);
+            }else if(tiketTerjual >= 20 && tiketTerjual <=40) {
+                let keuntungan = 10/100 * penjualan;
+                console.log("keuntungan penjualan tiket eksekutif adalah " + keuntungan);
+            }else if(tiketTerjual < 20) {
+                let keuntungan = 2/100 * penjualan;
+                console.log("keuntungan penjualan tiket eksekutif adalah " + keuntungan);
+            }
+        }else if(jenisTiket == "ekonomi") {
+            if(hargaTiket == 25000);
+            if(tiketTerjual >= 20) {
+                let keuntungan = 7/100 * penjualan;
+                console.log("keuntungan penjualan tiket ekonomi adalah " + keuntungan);
+            }
+        }else {
+                console.log("anda tidak mendapat keuntungan");
+            }
+
+        
+        console.log("keuntungan secara keseluruhan " + (437500 + 280000 + 35000));
+        console.log(`jumlah masing-masing tiket ${jumlahTiket}`);
+        console.log("total jumlah dari seluruh jenis tiket (yang terjual) " + (35 + 20 + 40 + 20 + 20) );
+
+
+
+
+    </script>
+</body>
+</html>

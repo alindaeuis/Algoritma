@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Tiket</title>
+</head>
+<body>
+    
+
+    <script>
+        const jumlahTiket = 50;
+        
+        let tiketTerjualVIP = 35;
+        let tiketTerjualEkesekutif = 40;
+        let tiketTerjualEkonomi = 25;
+
+        let hargaTiketVIP = 50000;
+        let hargaTiketEksekutif = 35000;
+        let hargaTiketEkonomi = 25000;
+
+        let penjualanVIP = tiketTerjualVIP * hargaTiketVIP;
+        let penjualanEksekutif = tiketTerjualEkesekutif * hargaTiketEksekutif;
+        let penjualanEkonomi = tiketTerjualEkonomi * hargaTiketEkonomi;
+        if(tiketTerjualVIP >= 35) {
+           keuntunganVIP = penjualanVIP * 25/100;
+        }else if(tiketTerjualVIP >= 20 && tiketTerjualVIP <= 35) {
+           keuntungaVIP = penjualanVIP * 20/100;
+        }else {
+            keuntunganVIP = penjualanVIP * 7/100;
+        }
+
+        
+        if(tiketTerjualEkesekutif >= 40) {
+            keuntunganEksekutif = penjualanEksekutif * 20/100;
+        }else if(tiketTerjualEksekutif >=20 && tiketTerjualEksekutif <= 40) {
+            keuntunganEksekutif = penjualanEksekutif * 10/100;
+        }else {
+            keuntunganEksekutif = penjualanEksekutif * 2/100;
+        }
+        
+        
+        if(tiketTerjualEkonomi >= 25) {
+            keuntunganEkonomi = penjualanEkonomi * 7/100;
+        }
+        
+        console.log("keuntungan tiket VIP adalah " + "Rp" + keuntunganVIP);
+        console.log("keuntungan tiket eksekutif adalah " + "Rp" + keuntunganEksekutif);
+        console.log("keuntungan tiket ekonomi adalah " + "Rp" + keuntunganEkonomi);
+        console.log("total keuntungan tiket secara keseluruhan adalah " + "Rp" + (keuntunganVIP + keuntunganEksekutif + keuntunganEkonomi));
+
+    </script>
+</body>
+</html>
