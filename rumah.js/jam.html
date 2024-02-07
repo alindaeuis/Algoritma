@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0ebf2;
+        }
+
+        .wrapper {
+            background-color:  #d7bad8;
+            padding: 18px;
+            border-radius: 15px;
+            border: 2px solid #ae7db0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="display">
+        <div id="clock"></div>
+    </div>
+ </div>
+
+    <script>
+        setInterval(() => {
+            const time = document.querySelector('#clock');
+            let date = new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let secondes = date.getSeconds();
+            let day_night = 'AM';
+
+            if(hours > 12) {
+                hours = hours - 12;
+                day_night = 'PM';
+            }
+            if(hours < 10) {
+                hours = "0" + hours;
+            }
+            if(minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if(secondes < 10) {
+                secondes = "0" + secondes;
+            }
+
+            time.innerHTML = hours+ ":" + minutes+ ":" + secondes + " " + day_night;
+        });
+    </script>
+</body>
+</html>

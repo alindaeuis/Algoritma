@@ -1,110 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <script>
-    //    var password = prompt('password?');
+      //    var password = prompt('password?');
 
-    //    if(password == 'kopi'){
-    //         document.write("<h2>selamat datang bos!<h2>");
-    //    }else {
-    //     document.write("<h2>password anda salah</h2>");
-    //    }
+      //    if(password == 'kopi'){
+      //         document.write("<h2>selamat datang bos!<h2>");
+      //    }else {
+      //     document.write("<h2>password anda salah</h2>");
+      //    }
 
-    //    document.write("<p>terimakasih telah berkunjung.</P>");
+      //    document.write("<p>terimakasih telah berkunjung.</P>");
 
-        // var totalBelanja = prompt('total belanja?', 0);
+      // var totalBelanja = prompt('total belanja?', 0);
 
-        // if(totalBelanja > 100000) {
-        //     document.write("<h2>selamat anda dapat hadiah!</h2>");
-        // }
+      // if(totalBelanja > 100000) {
+      //     document.write("<h2>selamat anda dapat hadiah!</h2>");
+      // }
 
-        // document.write("<p>terimakasih telah berbelanja</p>");
+      // document.write("<p>terimakasih telah berbelanja</p>");
 
-        let nilaiRapot = prompt('berapa nilai mu?', '');
-        let grade = '';
+      // let nilaiRapot = prompt('berapa nilai mu?', '');
+      // let grade = '';
 
-        if(nilaiRapot >= 90) grade = "A"
-        else if(nilaiRapot >= 80) grade = "B+"
-        else if(nilaiRapot >= 70) grade = "B"
-        else if(nilaiRapot >= 60) grade = "C+"
-        else if(nilaiRapot >= 50) grade = "C"
-        else if(nilaiRapot >= 40) grade = "D"
-        else if(nilaiRapot >= 30) grade = "E"
-        else grade = "F";
+      // if(nilaiRapot >= 90) grade = "A"
+      // else if(nilaiRapot >= 80) grade = "B+"
+      // else if(nilaiRapot >= 70) grade = "B"
+      // else if(nilaiRapot >= 60) grade = "C+"
+      // else if(nilaiRapot >= 50) grade = "C"
+      // else if(nilaiRapot >= 40) grade = "D"
+      // else if(nilaiRapot >= 30) grade = "E"
+      // else grade = "F";
 
-        document.write(`<p>grade anda: ${grade}</p>`);
+      // document.write(`<p>grade anda: ${grade}</p>`);
 
-        // looping while
-        let nilaiAwal = 1;
-        while(nilaiAwal <= 10) {
-            console.log("angkot no. " + nilaiAwal +" beroperasi dengan baik");
-        nilaiAwal++
-        }
+      // looping while
+      // for(nilaiAwal = 1; 10 !== nilaiAwal; nilaiAwal++) {
+      //     console.log("angkot no. " + nilaiAwal +" beroperasi dengan baik");
 
-        // looping for-while    
-        // let jmlAngkot = 10;
-        // let angkotBeroperasi = 6;
-        // let noAngkot = 1;
-        // while(noAngkot <= angkotBeroperasi) {
-        //     console.log("angkot no. " + noAngkot + " beroperasi dengan baik.");
-        //     noAngkot++
+      // }
 
+      // looping for-while
+      // let jmlAngkot = 10;
+      // let angkotBeroperasi = 6;
+      // let noAngkot = 1;
+      // while(noAngkot <= angkotBeroperasi) {
+      //     console.log("angkot no. " + noAngkot + " beroperasi dengan baik.");
+      //     noAngkot++
 
-        // }
-        
-        
-        // for(let noAngkot = 7; noAngkot <= 10; noAngkot++ ) {
-        //     console.log("angkot no. " + noAngkot + " sedang tidak beroperasi." );
-        // }
+      // }
 
-        // if(noAngkot <= 6) {
-        //     console.log("angkot no. " + noAngkot + " sedang beroperasi dengan baik");
-        // }
+      // for(let noAngkot = 7; noAngkot <= 10; noAngkot++ ) {
+      //     console.log("angkot no. " + noAngkot + " sedang tidak beroperasi." );
+      // }
 
+      // if(noAngkot <= 6) {
+      //     console.log("angkot no. " + noAngkot + " sedang beroperasi dengan baik");
+      // }
 
-        // pembelian tiket
-        let paketDewasa = 350000;
-        let paketAnak = 200000;
-        let paketBayi = 100000;
-        let pilihTiket = prompt("pilih tiket mu:", "");
+      // pembelian tiket
+      // let paketDewasa = 350000;
+      // let paketAnak = 200000;
+      // let paketBayi = 100000;
+      // let pilihTiket = prompt("pilih tiket mu:", "");
 
+      // if(pilihTiket == 'tiket dewasa')
+      //     document.write(`Harga tiket: ${paketDewasa}`)<br>
+      //     document.write("terimakasih telah beli tiket disini");
 
-        if(pilihTiket == 'tiket dewasa')
-            document.write(`Harga tiket: ${paketDewasa}`)<br>
-            document.write("terimakasih telah beli tiket disini");
+      // elseif(pilihTiket == 'tiket anak')
+      //     document.write(`Harga tiket: ${paketAnak}`);
+      //     document.write("terimakasih telah beli tiket disini");
 
-        elseif(pilihTiket == 'tiket anak')
-            document.write(`Harga tiket: ${paketAnak}`);
-            document.write("terimakasih telah beli tiket disini");
-        
-        elseif(pilihTiket == 'tiket bayi')
-            document.write(`Harga tiket: ${paketBayi}`);
-            document.write("terimakasih telah beli tiket disini");
+      // elseif(pilihTiket == 'tiket bayi')
+      //     document.write(`Harga tiket: ${paketBayi}`);
+      //     document.write("terimakasih telah beli tiket disini");
 
-        // cara bikin bilangan ganjil pake looping
-        // let angkaAwal = 1;
-        
-        // while(angkaAwal <= 50) {
-        //     angkaAwal = angkaAwal + 3;
-        //     console.log('bilangan ganjil' + angkaAwal);
-        //     angkaAwal++
-        // }
+      // cara bikin bilangan ganjil pake looping
+      // let angkaAwal = 1;
 
+      // while(angkaAwal <= 50) {
+      //     angkaAwal = angkaAwal + 3;
+      //     console.log('bilangan ganjil' + angkaAwal);
+      //     angkaAwal++
+      // }
 
+      // for(i = 30; i <= 50; i++) {
+      //     if(i % 3 == 0) {
+      //       if(i % 10 != 0) {
+      //         console.log(i);
+      //       }
+      // }
 
+      // let bilangan = 100;
+      // let tertinggi = 80;
 
-
-
-      
-        
-
+      // for(i = 1; i <= 30; i++) {
+      //     if(tertinggi < bilangan) {
+      //         console.log(bilangan);
+      //     }else {
+      //         console.log(tertinggi);
+      //     }
+      //   }
     </script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>looping</title>
+</head>
+<body>
+    
+    <script>
+        // for
+        // for(let i = 1; i <= 10; i++) {
+        //     console.log(`sesuatu ${i}`);
+        // }
+
+        // for(let z = 100; z >= 50; z--) {
+        //     console.log(z);
+        // }
+
+        // while
+        // let x = 40
+        // while(x >= 1) {
+        //     console.log(`x ke-${x}`);
+        //     x--
+        // }
+
+        // do-while
+        // let y = 1;
+        // do {
+        //     console.log(`y ke-${y}`);
+        //     y++
+        // }while(y<=10)
+
+        // bil ganjil-genap for
+        for(let x = 1; x <= 10; x++) {
+            if(x % 2 == 1) {
+                console.log(`for ganjil ${x}`);
+            }else{
+                console.log(`for genap ${x}`);
+            }
+        }
+        // bil ganjil-genap while
+        let y = 1;
+        while(y <= 10) {
+            if(y % 2 == 0) {
+                console.log(`while genap ke-${y}`);
+            }else {
+                console.log(`while ganjil ke-${y}`)
+            }
+            y++
+        }
+
+        // bil ganjil-genap do-while
+        let z = 1;
+        do {
+            if(z % 2 == 1) {
+            console.log(`do-while ganjil ke-${z}`);
+        }else {
+            console.log(`do-while genap ke-${z}`);
+        }
+            z++
+        }while(z <= 10)
+
+    //    faktorial menggunakan for
+       let hasil = 1;
+       let angka = 5;
+       for(let i = 1; i <= angka; i++) {
+            hasil *= i
+        }
+        document.write("n faktorial 'for' dari 5 adalah ", hasil, "</br>");
+
+        //  faktorial menggunakan while
+        let hasilWhile = 1;
+        let n = 1;
+        while(n <= 5) {
+            hasilWhile *= n;
+            n++
+        }
+        document.write("n faktorial 'while' dari 5 adalah ", hasilWhile, "</br>");
+
+        // faktorial menggunakan do-while
+        let hasilN = 1;
+        let t = 1;
+        do{
+            document.write("n faktorial 'do-while' dari 5 adalah ", hasilN);
+            hasilN *= t
+            t++
+        }while(t <= 5)
+
+        function faktorial(x) {
+            if(x === 0) {
+                return 1;
+            }
+            return x * faktorial(x-1)
+        }
+
+        let x = faktorial(10);
+        console.log(x);
+
+
+        // function
+        function kali() {
+            var hasil= 0
+            for(var i = 1; i < arguments.length; i++) {
+                hasil += arguments[i];
+            }
+            return hasil;
+        }
+
+        var coba = kali(1,2,3,4,5);
+        console.log(coba);
+
+       
+
+        
+
+    </script>
+</body>
+</html>
